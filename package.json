@@ -33,5 +33,8 @@
     "start": "docker-compose run --service-ports site jekyll serve --force_polling",
     "update": "docker-compose run site jekyll update",
     "postinstall": "docker-compose run site jekyll new ."
+  },
+  "dependencies": {
+    "node": "^9.1.0"
   }
 }
