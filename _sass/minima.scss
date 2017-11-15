@@ -9,8 +9,16 @@ body {
 }
 
 .headerWrap {
-  width: 500px;
+  width: 600px;
   margin: 0 auto;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+h2 {
+  font-weight: normal;
 }
 
 .footer {
@@ -37,6 +45,7 @@ a {
   border-radius: 20px;
   width: 150px;
   height: 150px;
+  vertical-align: top;
 }
 
 .post-list li:hover {
@@ -55,15 +64,22 @@ a {
 .headerPar {
   color: #FFFFFF;
   height: 180px;
-  width: 180px;
+  width: 250px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 20px;
   background-color: $dark;
   transform: skew(-20deg);
-  display: inline-block;
+  display: inline-block; 
   border-radius: 20px;
-  vertical-align: top;
+  text-align: center;
+  
+  a {
+    line-height: 140px;
+    color: $bright;
+    font-size: 40px;
+  }
+
 }
 
 .header {
