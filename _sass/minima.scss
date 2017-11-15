@@ -1,21 +1,77 @@
+$bright: #EAEAEA;
+$dark: #222222;
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Century Gothic";
+  font-family: "Helvetica";
+  color: $dark;
 }
 
-.wrapper {
-  background-color: #999999;
-  font-size: $asf;
-  min-height: 100%;
+.headerWrap {
+  width: 500px;
+  margin: 0 auto;
 }
 
 .footer {
   height: 200px;
-  background-color: #555566;
+  background-color: $dark;
+  margin-top: 100px;
 }
 
 a {
   text-decoration: none;
+  color: $dark;
+}
 
+.post-list {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.post-list li {
+  display: inline-block;
+  margin: 25px;
+  background-color: $bright;
+  padding: 30px;
+  border-radius: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+.post-list li:hover {
+  background-color: $dark;
+  color: $bright;
+  a {
+    color: $bright;
+  }
+}
+
+.blog {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.headerPar {
+  color: #FFFFFF;
+  height: 180px;
+  width: 180px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  background-color: $dark;
+  transform: skew(-20deg);
+  display: inline-block;
+  border-radius: 20px;
+  vertical-align: top;
+}
+
+.header {
+  //background: url("./_assets/bg.jpg") no-repeat;
+  //background-size: 100%;
+  margin-bottom: 100px;
+  height: 200px;
+  width: 100%;
+  background-color: $bright;
+  //background: url("./_assets/bg.jpg") no-repeat;
 }
