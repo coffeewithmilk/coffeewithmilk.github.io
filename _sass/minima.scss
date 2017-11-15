@@ -1,11 +1,13 @@
-$bright: #EAEAEA;
-$dark: #222222;
+$bright: #CCCCDD;
+$dark: #111122;
+$bgcolor: #EEEEFE;
 
 body {
   margin: 0;
   padding: 0;
   font-family: "Helvetica";
   color: $dark;
+  background-color: $bgcolor;
 }
 
 .headerWrap {
@@ -56,17 +58,17 @@ a {
   }
 }
 
-.blog {
+.contentWrapper {
   width: 50%;
   margin: 0 auto;
 }
 
 .headerPar {
   color: #FFFFFF;
-  height: 180px;
+  height: 160px;
   width: 250px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: 20px;
   background-color: $dark;
   transform: skew(-20deg);
@@ -75,9 +77,10 @@ a {
   text-align: center;
   
   a {
-    line-height: 140px;
-    color: $bright;
+    line-height: 120px;
+    color: #FFFFFF;
     font-size: 40px;
+    transform: skew(0);
   }
 
 }
