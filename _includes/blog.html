@@ -1,24 +1,16 @@
----
-layout: basic
----
-
-
-
   <h1 class="page-heading">Blogg</h1>
-   
-  {{ content }}
 
   <ul class="post-list">
     {% for post in site.posts %}
       <li> 
-        <a href="{{ post.url | relative_url }}">
+        
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h2>
-          {{ post.title | escape }}
+            <a href="{{ post.url | relative_url }}">{{ post.title | escape }} </a>
         </h2>
-        {{ post.content | slice: 0, 300}} ...
-      </a>
+        {{ post.content | truncate: 100, "..."}}
+     
       </li>
     {% endfor %}
   </ul>
