@@ -17,7 +17,7 @@ body {
 }
 
 .page-heading {
-  float: right;
+  text-align: right;
   margin-right: 80px;
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 .navWrap {
-  width: 800px;
+  width: 880px;
   margin: 0 auto;
 }
 
@@ -64,7 +64,7 @@ h2 {
 
 a {
   text-decoration: none;
-  color: $light;
+  color: $bright;
 }
 
 .post-list {
@@ -102,22 +102,20 @@ a {
   padding: 5%;
 }
 
-.navItem {
+.navWrap a {
   height: $nav-height / 2;
   width: 350px;
   margin: 20px;
   display: inline-block; 
   text-align: center;
-  
-  a {
-    line-height:40px;
-    color: $bright;
-    font-size: 26px;
-  }
+  padding: 20px;
+  line-height:26px;
+  color: $bright;
+  font-size: 26px;
   
 }
 
-.navItem a:hover {
+.navWrap a:hover {
     color: $light;
 }
 
@@ -130,4 +128,34 @@ a {
   height: $nav-height;
   width: 100%;
   //background: url("./_assets/bg.jpg") no-repeat;
+}
+
+@media screen and (max-width: 800px) {
+  
+  .nav {
+    position: relative;
+    width: 100%;
+    background-color: $bgcolor;
+    margin-top: 0;
+  }
+
+  .navWrap {
+    width: 100%;
+
+    a {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      padding-top: 40px;
+      height: 80px;
+      background-color: $dark;
+      border-bottom: 1px solid white;
+    }
+  }
+
+  .contentWrapper {
+    width: 100%;
+    border-radius: 0;
+  }
+  
 }
