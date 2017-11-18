@@ -5,10 +5,11 @@ comments: true
 
   <h1 class="page-heading">Blogg</h1>
    <hr />
-  {{ content }}
+    {{ content }}
    <hr />
   
-   {% if page.comments %}
+   
+  
    <div id="disqus_thread"></div>
    <script>
    
@@ -22,7 +23,7 @@ comments: true
    };
    */
    (function() { // DON'T EDIT BELOW THIS LINE
-   var d = document, s = d.createElement('script');
+   var d = document, s = d.createElement('script'); 
    s.src = 'https://coffeewithmilk.disqus.com/embed.js';
    s.setAttribute('data-timestamp', +new Date());
    (d.head || d.body).appendChild(s);
@@ -30,6 +31,6 @@ comments: true
    </script>
    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                                
-   {% endif %}
+
 
 
