@@ -3,7 +3,9 @@ layout: basic
 comments: true
 ---
 
-  <h1 class="page-heading">Blogg</h1>
+  <h1 class="page-heading">{{ page.title }}</h1>
+  {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+  {{ page.date | date: date_format }}
    <hr />
     {{ content }}
    <hr />
