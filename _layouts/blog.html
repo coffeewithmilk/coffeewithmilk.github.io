@@ -5,7 +5,7 @@ layout: basic
 
 
   <h1 class="page-heading">Blogg</h1>
-   
+   <hr />
   {{ content }}
 
   <ul class="post-list">
@@ -13,7 +13,7 @@ layout: basic
       <li> 
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
-
+        <hr />
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
