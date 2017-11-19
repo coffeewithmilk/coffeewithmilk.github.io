@@ -2,17 +2,8 @@
 layout: basic
 title: About
 permalink: /about/
+image: "../assets/david.jpg"
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Mitt namn är David Sjögren. Jag är en 23-årig diabetiker som gillar programmering, musik, kaffe och snus. Jag studerar Utveckling och drift av mjukvarusystem på Linnéuniversitetet. Detta är mitt första år på utbildningen, men jag har studerat 60 hp Programvaruteknik tidigare, så jag har egentligen bara två år kvar, eftersom jag har en individuell studieplan.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll

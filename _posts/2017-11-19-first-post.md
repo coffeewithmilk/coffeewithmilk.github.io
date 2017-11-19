@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Första inlägget"
-date:   2017-11-19 01:33:00 -0600
+date:   2017-11-19 01:33:00 +0200
 categories: blog
 image: "../assets/blog0.JPG"
 ---
