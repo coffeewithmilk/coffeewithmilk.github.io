@@ -4,6 +4,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: index
 title: Davids Blogg
+image: "../assets/david.jpg"
 ---
 
 # David Sjögren
