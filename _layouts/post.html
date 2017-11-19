@@ -6,6 +6,7 @@ layout: basic
   {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
   <p>{{ page.date | date: date_format }}</p>
    <hr />
+    <img src="{{ page.image | relative_url }}" />
     {{ content }}
    <hr />
   
