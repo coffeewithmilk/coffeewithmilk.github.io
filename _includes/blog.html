@@ -1,4 +1,4 @@
-  <h1 class="page-heading">Blogg</h1>
+  <h1 class="page-heading">Blogginlägg</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
@@ -9,7 +9,7 @@
         <h2>
             <a href="{{ post.url | relative_url }}">{{ post.title | escape }} </a>
         </h2>
-        {{ post.content | truncate: 100, "..."}}
+        {{ post.content | truncate: 50, "..."}}
      
       </li>
     {% endfor %}
