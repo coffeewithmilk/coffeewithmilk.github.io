@@ -67,6 +67,11 @@ h2 {
   a {
     display: block;
     color: $link-color;
+    
+  }
+
+  a:hover {
+    color: $bright;
   }
 }
 
@@ -85,6 +90,11 @@ a {
   display: inline-block;
   margin: 4%;
   width: 80%;
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 #disqus_thread {
@@ -140,7 +150,6 @@ a {
   width: 40%;
   margin-left: 20px;
   margin-right: 20px;
-  opacity: 0.9;
   display: block;
   float: left; 
   border-radius: 26px;
@@ -224,6 +233,15 @@ a {
     * {
       margin: 4%;
     }
+  }
+
+  .realContent img {
+    width: 100%;
+    clear: both;
+    margin: 0;
+    border-radius: 0;
+    display: block;
+    margin-bottom: 10px; 
   }
 
   #disqus_thread {
