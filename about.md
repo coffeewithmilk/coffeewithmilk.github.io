@@ -9,4 +9,4 @@ Mitt namn är David Sjögren. Jag är en 23-årig diabetiker som gillar programm
 
 Detta är mitt första år på utbildningen, men jag har studerat 60 hp Programvaruteknik tidigare, så jag har egentligen bara två år kvar eftersom jag har en individuell studieplan.
 
-Jag bor i Oxhagen i Kalmar.
+Jag bor i Oxhagen i Kalmar. 
