@@ -1,0 +1,12 @@
+/* TEAM */
+  Developer/Web designer: David Sjögren
+  Contact: sdavid2304@gmail.com
+  From: Kalmar, Sweden
+
+/* Thanks */
+  Lecturer/Examinator: Johan Leitet
+
+/* Site */
+  Last update: 2017/11/19
+  Standards: HTML5
+  Software: Jekyll

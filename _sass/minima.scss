@@ -8,9 +8,13 @@ $link-color: #2980b9;
 
 $nav-height: 80px;
 
-body {
-  margin: 0; 
+%nomargin-padding {
+  margin: 0;
   padding: 0;
+} 
+
+body {
+  @extend %nomargin-padding;
   font-family: 'Open Sans', sans-serif;
   color: $bright;
   background-color: $bgcolor;
@@ -19,7 +23,7 @@ body {
 
 .page-heading {
   text-align: right;
-  margin-right: 80px;
+  margin-right: 20px;
 }
 
 .wrapper {
@@ -28,7 +32,6 @@ body {
 
 .header {
   height: 200px;
-  background: url("../bg.JPG") no-repeat;
   background-size: 100% 100%; 
 }
 
@@ -42,11 +45,7 @@ body {
   margin: 0 auto;
 }
 
-h1 {
-  font-weight: normal;
-}
-
-h2 {
+h1, h2 {
   font-weight: normal;
 }
 
@@ -92,8 +91,7 @@ a {
   width: 80%;
 
   * {
-    margin: 0;
-    padding: 0;
+    @extend %nomargin-padding;
   }
 }
 
@@ -119,7 +117,6 @@ a {
   margin-right: 20px;
   margin-bottom: 100px;
   float: left;
-  
 }
 
 .sidebar {
@@ -167,11 +164,8 @@ a {
 .nav {
   position: fixed;
   background-color: $dark;
-  //background: url("./_assets/bg.jpg") no-repeat;
-  //background-size: 100%;
   height: $nav-height;
   width: 100%;
-  //background: url("./_assets/bg.jpg") no-repeat;
 }
 
 @media screen and (max-width: 1200px) {
@@ -197,42 +191,43 @@ a {
     }
   }
 
-  .wrapper {
+  %nomargin-padding-fullwidth {
     width: 100%;
-    padding: 0;
     margin: 0;
+    padding: 0;
+  }
+
+  .wrapper {
+    @extend %nomargin-padding-fullwidth;
   }
 
   .contentWrapper {
-    margin: 0;
-    width: 100%;
-    border-radius: 0;
+    @extend %nomargin-padding-fullwidth;
+    border-radius: 0; 
   }
 
-  .sidebar {
+  %superContent {
     border-radius: 0;
     margin: 0;
     padding: 0;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-top: 79px;
     width: 100%;
     display: block;
     float: none;
+    h1 {
+      margin-right: 80px;
+    }
   }
 
   .realContent {
-    border-radius: 0;
-    margin: 0;
-    padding: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-    display: block;
-    float: none;
-    * {
-      margin: 4%;
-    }
+    @extend %superContent;
+    p { margin: 4%; }
+  }
+
+  .sidebar {
+    @extend %superContent;
+    margin-top: 79px;
   }
 
   .realContent img {
